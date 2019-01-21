@@ -1,5 +1,3 @@
 select count(*)
 from {{ table_name }}
-{% if cols %}
-group by {{ cols|join(', ') }}
-{% endif %};
+{% if cols %}group by {{ cols|join(', ') }}{% endif %};
