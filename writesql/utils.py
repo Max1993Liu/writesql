@@ -26,3 +26,11 @@ def as_template_function(f):
     def wrapped(*args, **kwargs):
         return render_template(f_name, **kwargs)
     return wrapped
+
+
+def copy_and_print(text):
+    """ Copy the text to clipboard and print it out"""
+    from pandas.io.clipboard import clipboard_set
+
+    clipboard_set(text)
+    print(text)

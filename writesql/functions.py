@@ -18,4 +18,4 @@ def find_duplicates(table_name, cols, min_count=1):
 
 if __name__ == '__main__':
     # print(find_duplicates(table_name='table_name', cols=['cert_no', 'seq_no'], min_count=5))
-    print(count(table_name='some_table', cols=None))
+    print(6)
